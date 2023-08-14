@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&family=Rubik:wght@300&display=swap");
+.section {
+  height: max(700px, 100vh);
+  display: flex;
+  justify-content: center;
+  scroll-margin-top: 3.6em;
+}
+.sectionWrapper {
+  @media (max-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(200, 8px);
+    width: 100%;
+  }
+
+  @media (min-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(200, 8px);
+    width: 100%;
+  }
+
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(200, 8px);
+    width: 100%;
+  }
+}
+.sectionWrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(200, 8px);
+}
+.heading {
+  grid-column: 2 / span 5;
+  grid-row: 15;
+  z-index: 1;
+}
+.heading > p {
+  font-weight: 1000;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+}
+.hero-pic {
+  height: 50em;
+  width: 50em;
+  grid-column: 6 / span 9;
+  grid-row: 8;
+}
+.left-semi-circle {
+  background-color: #d7ebb9;
+  grid-column: 1/5;
+  height: 600px;
+  width: 300px;
+  border-radius: 0 300px 300px 0;
+  z-index: 1;
+}
+.sub-heading {
+  font-family: "Rubik", sans-serif;
+
+  z-index: 1;
+  grid-row: 62;
+  grid-column: 2 / span 4;
+}
+.join-button > button {
+  background-color: greenyellow;
+  border-radius: 20px;
+  width: 11em;
+  height: 4em;
+}
+.join-button {
+  z-index: 1;
+  grid-row: 70;
+  grid-column: 2 / span 4;
+}
